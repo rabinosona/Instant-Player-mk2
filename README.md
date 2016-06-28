@@ -1,2 +1,2 @@
-# Instant-Player-mk2
-New interface, file system, deleted a lot of trash
+# Instant-Player
+A player that i've created for educational purposes. Just a training in Qt Programming.
