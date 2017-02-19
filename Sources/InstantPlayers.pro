@@ -25,3 +25,6 @@ HEADERS  += mainwindow.h \
     videowindow.h
 
 FORMS    += mainwindow.ui
+
+RESOURCES += \
+    graphics.qrc

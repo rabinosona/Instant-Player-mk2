@@ -1,7 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "videowindow.h"
-#include "setofbuttons.h"
 
 videoWindow *ptr;
 
@@ -59,4 +58,14 @@ void MainWindow::on_StopVideo_triggered()
 {
     if (ptr != 0)
         ptr->player->stop();
+}
+
+void MainWindow::on_actionSearch_triggered()
+{
+
+}
+
+void MainWindow::on_horizontalSlider_sliderPressed()
+{
+
 }

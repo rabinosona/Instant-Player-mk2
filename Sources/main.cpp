@@ -1,6 +1,5 @@
 #include "mainwindow.h"
 #include "videowindow.h"
-#include "setofbuttons.h"
 #include <QApplication>
 
 int main(int argc, char *argv[])

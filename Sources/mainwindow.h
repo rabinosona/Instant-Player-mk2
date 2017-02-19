@@ -33,6 +33,10 @@ private slots:
 
     void on_StopVideo_triggered();
 
+    void on_actionSearch_triggered();
+
+    void on_horizontalSlider_sliderPressed();
+
 private:
     Ui::MainWindow *ui;
 };

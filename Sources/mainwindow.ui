@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Instant Player</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QSlider" name="horizontalSlider">
@@ -46,18 +46,15 @@
    </widget>
    <addaction name="menuFile"/>
   </widget>
-  <widget class="QToolBar" name="mainToolBar">
-   <attribute name="toolBarArea">
-    <enum>TopToolBarArea</enum>
-   </attribute>
-   <attribute name="toolBarBreak">
-    <bool>false</bool>
-   </attribute>
-  </widget>
-  <widget class="QStatusBar" name="statusBar"/>
   <widget class="QToolBar" name="toolBar">
    <property name="windowTitle">
     <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
    </property>
    <attribute name="toolBarArea">
     <enum>TopToolBarArea</enum>
@@ -66,10 +63,20 @@
     <bool>false</bool>
    </attribute>
    <addaction name="OpenFile"/>
+   <addaction name="actionSearch"/>
   </widget>
   <widget class="QToolBar" name="toolBar_2">
    <property name="windowTitle">
     <string>toolBar_2</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::AllToolBarAreas</set>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonIconOnly</enum>
    </property>
    <attribute name="toolBarArea">
     <enum>BottomToolBarArea</enum>
@@ -81,10 +88,11 @@
    <addaction name="PauseVideo"/>
    <addaction name="StopVideo"/>
   </widget>
+  <widget class="QStatusBar" name="statusBar"/>
   <action name="actionActionPlay">
    <property name="icon">
     <iconset>
-     <normaloff>E:/play.png</normaloff>E:/play.png</iconset>
+     <normaloff>../build-InstantPlayers-Desktop_Qt_5_5_1_MinGW_32bit-Release/release/graphics/375.png</normaloff>../build-InstantPlayers-Desktop_Qt_5_5_1_MinGW_32bit-Release/release/graphics/375.png</iconset>
    </property>
    <property name="text">
     <string>actionPlay</string>
@@ -93,7 +101,7 @@
   <action name="OpenFile">
    <property name="icon">
     <iconset>
-     <normaloff>E:/open_folder-128.png</normaloff>E:/open_folder-128.png</iconset>
+     <normaloff>../build-InstantPlayers-Desktop_Qt_5_5_1_MinGW_32bit-Release/release/graphics/Open_file_document_paper_folder.png</normaloff>../build-InstantPlayers-Desktop_Qt_5_5_1_MinGW_32bit-Release/release/graphics/Open_file_document_paper_folder.png</iconset>
    </property>
    <property name="text">
     <string>Open</string>
@@ -102,7 +110,7 @@
   <action name="PauseVideo">
    <property name="icon">
     <iconset>
-     <normaloff>E:/256-256-46c8ef7ada75656wabe6b290f2931fc6c.png</normaloff>E:/256-256-46c8ef7ada75656wabe6b290f2931fc6c.png</iconset>
+     <normaloff>../build-InstantPlayers-Desktop_Qt_5_5_1_MinGW_32bit-Release/release/graphics/Mdi7gq5c9.png</normaloff>../build-InstantPlayers-Desktop_Qt_5_5_1_MinGW_32bit-Release/release/graphics/Mdi7gq5c9.png</iconset>
    </property>
    <property name="text">
     <string>Pause</string>
@@ -116,10 +124,19 @@
   <action name="StopVideo">
    <property name="icon">
     <iconset>
-     <normaloff>E:/stop.png</normaloff>E:/stop.png</iconset>
+     <normaloff>../build-InstantPlayers-Desktop_Qt_5_5_1_MinGW_32bit-Release/release/graphics/Stop.png</normaloff>../build-InstantPlayers-Desktop_Qt_5_5_1_MinGW_32bit-Release/release/graphics/Stop.png</iconset>
    </property>
    <property name="text">
     <string>Stop</string>
+   </property>
+  </action>
+  <action name="actionSearch">
+   <property name="icon">
+    <iconset>
+     <normaloff>../build-InstantPlayers-Desktop_Qt_5_5_1_MinGW_32bit-Release/release/graphics/images.png</normaloff>../build-InstantPlayers-Desktop_Qt_5_5_1_MinGW_32bit-Release/release/graphics/images.png</iconset>
+   </property>
+   <property name="text">
+    <string>search</string>
    </property>
   </action>
  </widget>
